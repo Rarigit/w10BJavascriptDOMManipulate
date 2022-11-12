@@ -1,0 +1,34 @@
+We can now dive into our pages and manipulate them with JavaScript! We have many ways to do this, so we better keep them straight in our heads.
+
+ 
+
+REMEMBER TO COMMENT YOUR CODE
+
+ 
+
+Setup a GitHub repository and local git repository
+The local repository should be a project created by the projectStarter script
+Setup the index.html to link to your app.js
+Add some simple content in your HTML (this can be anything) with some classes and id's
+In you app.js show your knowledge of each of the following selectors:
+querySelector()
+querySelectorAll()
+getElementById()
+getElementsByClassName()
+You must show each method by changing the page somehow! Not simply console.log anymore. You must demonstrate each of the following changes at least once:
+Changing an elements style
+Adding new content to a tag using innerHTML
+Adding a new nested tag using innerHTML
+Adding a new tag before an existing tag using outerHTML
+Changing a tag completely using outerHTML
+Add, commit and push to GitHub your changes and submit the GitHub URL.
+
+Make sure you understand the difference between a DOM selector that returns multiple elements and one that only returns a single value. For ones that return multiple, you will want to loop through the results.
+
+ex:
+
+let comments = getElementsByClass(`comment`);
+
+for(let i=0; i<comments.length; i++) {
+  comments[i][`style`][`color`] = '#ff0000';
+}
